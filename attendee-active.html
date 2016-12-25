@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Realtime Q&amp;A</title>
+<!-- Fonts via fonts.com -->
+<script type="text/javascript" src="http://fast.fonts.com/jsapi/a09d5d16-57fd-447d-a0f6-73443033d2de.js">
+</script>
+<!-- Main site styles -->
+<link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
+<body>
+<header>
+    <h1>Realtime Q&amp;A</h1>
+    <p class="tagline">
+    A live feedback system for classes, presentations, and conferences.
+    </p><!--/.tagline-->
+</header>
+    
+<section>
+    <header>
+        <h2>Realtime Web Apps &amp; the Mobile Internet</h2>
+        <p>
+        Presented by Jason Lengstorf
+        (<a href="mailto:jason@lengstorf.com">email</a>)
+        </p>
+    </header>
+    <form id="ask-a-question">
+        <label>
+        If you have a question and you don't see it below, ask it here.
+        <input type="text" name="new-question" tabindex="1" />
+        </label>
+        <input type="submit" value="Ask" tabindex="2" />
+    </form><!--/#ask-a-question-->
+    
+    <ul id="questions">
+        <li id="question-1"
+            data-count="27">
+            <p>
+            What is the best way to implement realtime features today?
+            </p>
+            <form class="vote">
+            <input value="I also have this question."
+            type="submit" />
+            </form>
+        </li><!--/#question-1-->
+        <li id="question-2"
+            data-count="14">
+            <p>
+            Does this work on browsers that don't support the
+            WebSockets API?
+            </p>
+            <form class="vote">
+            <input value="I also have this question."
+            type="submit" />
+            </form>
+        </li><!--/#question-2-->
+    </ul><!--/#questions-->
+</section>
+    
+<footer>
+    <ul>
+        <li class="copyright">
+        &copy; 2013 Jason Lengstorf &amp; Phil Leggetter
+        </li><!--/.copyright-->
+        <li>
+        Part of <em>Realtime Web Apps: HTML5 Websockets, Pusher, and the
+        Web&rsquo;s Next Big Thing</em>.
+        </li>
+        <li>
+        <a href="http://amzn.to/XKcBbG">Getthe Book</a> |
+        <a href="http://cptr.me/UkMSmn">SourceCode (on GitHub)</a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>

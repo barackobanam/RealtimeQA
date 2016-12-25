@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Realtime Q&amp;A</title>
+<!-- Fonts via fonts.com -->
+<script type="text/javascript" src="http://fast.fonts.com/jsapi/a09d5d16-57fd-447d-a0f6-73443033d2de.js">
+</script>
+<!-- Main site styles -->
+<link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
+<body>
+<header>
+    <h1>Realtime Q&amp;A</h1>
+    <p class="tagline">
+    A live feedback system for classes, presentations, and conferences.
+    </p><!--/.tagline-->
+</header>
+<section>
+    <form id="attending">
+        <h2>Attending?</h2>
+        <p>Join a room using its ID.</p>
+        <label>
+        What is the room's ID?
+        <input type="text" name="room_id" />
+        </label>
+        <input type="submit" value="Join This Room" />
+    </form><!--/#attending-->
+    
+    <form id="presenting">
+        <h2>Presenting?</h2>
+        <p>Create a room to start your Q&amp;A session.</p>
+        <label>
+        Tell us your name (so attendees know who you are).
+        <input type="text" name="presenter-name" />
+        </label>
+        <label>
+        Tell us your email (so attendees can get in touch with you).
+        <input type="email" name="presenter-email" />
+        </label>
+        <label>
+        What is your session called?
+        <input type="text" name="session-name" />
+        </label>
+        <input type="submit" value="Create Your Room" />
+    </form><!--/#presenting-->
+</section>
+<footer>
+    <ul>
+        <li class="copyright">
+        &copy; 2013 Jason Lengstorf &amp; Phil Leggetter
+        </li><!--/.copyright-->
+        <li>
+        Part of <em>Realtime Web Apps: HTML5 Websockets, Pusher, and the
+        Web&rsquo;s Next Big Thing</em>.
+        </li>
+        <li>
+        <a href="http://amzn.to/XKcBbG">Get the Book</a> |
+        <a href="http://cptr.me/UkMSmn">Source Code (on GitHub)</a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
